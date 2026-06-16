@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - CardioCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2 class="login">SIGN UP PAGE</h2>
+
+<div id="header">
+    <h3>
+        <img src="{{ url_for('static', filename='images/heart.png') }}" alt="heart">
+        CardioCare AI
+    </h3>
+
+    <div id="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('testing') }}">Predict</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+</div>
+
+<div class="page">
+
+    <img src="{{ url_for('static', filename='images/heart.png') }}" class="welcome-heart">
+
+    <h1 class="login-page">Create Account</h1>
+
+    <p class="account">
+        Join CardioCare AI and start your heart health journey
+    </p>
+
+    <div class="input-box">
+        <input type="text" placeholder="Full Name" required>
+    </div>
+
+    <br>
+
+    <div class="input-box">
+        <input type="email" placeholder="Email Address" required>
+    </div>
+
+    <br>
+
+    <div class="input-box">
+        <input type="text" placeholder="Username" required>
+    </div>
+
+    <br>
+
+    <div class="input-box">
+        <input type="password" placeholder="Password" required>
+    </div>
+
+    <br>
+
+    <div class="input-box">
+        <input type="password" placeholder="Confirm Password" required>
+    </div>
+
+   <button class="signup"onclick="window.location.href='/signup-success'">
+    Create Account
+</button>
+
+    <p class="signup-text">
+        Already have an account?
+        <a href="{{ url_for('login') }}">Login</a>
+    </p>
+
+</div>
+
+</body>
+</html>

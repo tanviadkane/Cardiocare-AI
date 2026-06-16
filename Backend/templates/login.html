@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <script src="first.js"></script>
+     <h2 class="login">Login Page</h2>
+    
+    <div id="header">
+
+     <h3>
+         <img src="{{url_for('static', filename='images/heart.png')}}" alt="heart">
+        CardioCare AI
+    </h3>
+
+     <div id="navbar">
+       <a href="{{ url_for('index') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('testing') }}">Predict</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+        <button onclick="window.location.href='/testing'">Login</button>
+     </div>
+
+    </div> 
+    <div class="page">
+      <h1 class="login-page">
+      <img src="{{url_for('static', filename='images/heart.png')}}" class="welcome-heart">
+        <br>
+        Welcome Page</h1>
+        <br>
+        <p class="account">login to your account</p>
+        <br>
+      <div class="input-box">
+        <img src="{{url_for('static', filename='images/person logo.png')}}" class="username">
+        <input type="text" placeholder="Username">
+    </div>
+
+    <br>
+
+    <!-- Password -->
+    <div class="input-box">
+
+        <img src="{{url_for('static', filename='images/password.jpg')}}" class="password">
+        <input type="password" placeholder="Password">
+    </div>
+
+
+   
+      <button class="userlogin" onclick="window.location.href='/testing'">Login</button>
+      <p class="signup-text">
+    Don't have an account?
+    <a href="{{ url_for('signup') }}">Sign Up</a>
+</p>
+    </div>
+
+</body>
+</html>

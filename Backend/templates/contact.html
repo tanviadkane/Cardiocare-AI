@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2 class="home">CONTACT PAGE</h2>
+
+<div id="header">
+    <h3>
+        <img src="{{ url_for('static', filename='images/heart.png') }}" alt="heart">
+        CardioCare AI
+    </h3>
+
+    <div id="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('testing') }}">Predict</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+</div>
+
+<div class="contact-container">
+
+    <h1>Get In Touch</h1>
+
+    <p class="contact-text">
+        Have questions, suggestions, or feedback about CardioCare AI?
+        We'd love to hear from you.
+    </p>
+
+    <div class="contact-card">
+        <h2>📧 Email</h2>
+        <p>support@cardiocareai.com</p>
+    </div>
+
+    <div class="contact-card">
+        <h2>📱 Phone</h2>
+        <p>+91 98765 43210</p>
+    </div>
+
+    <div class="contact-card">
+        <h2>📍 Location</h2>
+        <p>Nagpur, Maharashtra, India</p>
+    </div>
+
+    <div class="contact-card">
+        <h2>💬 Support</h2>
+        <p>
+            For any technical issues or project-related queries,
+            feel free to contact us. We will respond as soon as possible.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

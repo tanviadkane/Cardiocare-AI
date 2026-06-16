@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <h2 class="home">Result</h2>
+    
+    <div id="header">
+
+     <h3>
+         <img src="{{url_for('static', filename='images/heart.png')}}" alt="heart">
+        CardioCare AI
+    </h3>
+
+     <div id="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('testing') }}">Predict</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+        <button>Logout</button>
+     </div>
+    </div>
+
+<div class="result-container">
+
+    <div class="icon danger">
+        ✖
+    </div>
+
+    <h1 class="danger-text">Heart Disease Detected</h1>
+
+    <p>You may have risk of heart disease.</p>
+
+    <div class="prediction-box danger-box">
+        Disease Detected
+    </div>
+
+    <a href="{{ url_for('testing') }}">
+        <button>Test Another Patient</button>
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <h2 class="home">About Page</h2>
+
+<div id="header">
+    <h3>
+        <img src="{{ url_for('static', filename='images/heart.png') }}" alt="heart">
+        CardioCare AI
+    </h3>
+
+    <div id="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('testing') }}">Predict</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+</div>
+   
+<h1 class="about">About CardioCare AI</h1>
+<br><br>
+
+<p class="about">
+CardioCare AI is an AI-powered Heart Disease Prediction System developed
+to help identify the risk of heart disease using Machine Learning.
+The system analyzes important health parameters such as age, gender,
+blood pressure, cholesterol level, heart rate, chest pain type, and
+other medical factors.
+</p>
+
+<p class="about">
+This project is designed to provide quick and accurate predictions,
+helping users understand their heart health status. By entering patient
+details, the system processes the information through a trained Machine
+Learning model and predicts whether there is a risk of heart disease.
+</p>
+
+<p class="about">
+CardioCare AI was developed using Python, Flask, HTML, CSS, and Machine
+Learning technologies. The objective of this project is to demonstrate
+how Artificial Intelligence can assist in healthcare and support early
+detection of heart-related problems.
+</p>
+<br>
+
+<h2>Features</h2>
+
+<ul class="about">
+    <li>AI-Powered Heart Disease Prediction</li>
+    <li>User-Friendly Interface</li>
+    <li>Fast and Accurate Results</li>
+    <li>13 Health Parameters Analysis</li>
+    <li>Machine Learning Based System</li>
+</ul>
+<br>
+<h2>Technologies Used</h2>
+
+<ul class="about">
+    <li>Python</li>
+    <li>Flask</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Machine Learning</li>
+</ul>
+    
+</body>
+</html>

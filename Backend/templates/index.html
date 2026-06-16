@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiocare AI</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <script src="first.js"></script>
+     <h2 class="home">HOME PAGE</h2>
+    <div id="header">
+
+     <h3>
+         <img src="{{ url_for('static', filename='images/heart.png') }}" alt="heart">
+        CardioCare AI
+    </h3>
+
+     <div id="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('testing') }}">Predict</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+        <button onclick="window.location.href='/login'">Login</button>
+     </div>
+
+    </div> 
+    <P class="x"> + AI-Powered</P>
+
+    <div class="abc">
+
+     <div class="text">
+
+         <h1 class="ai">
+            AI-Powered <br>
+
+            <span class="disease">Heart Disease</span> <br>
+
+            Prediction
+         </h1>
+
+         <p class="p">
+            Cardiocare AI uses Machine Learning <br>
+            to predict the risk of Heart Disease <br>
+            based on Health Parameter
+         </p>
+        <div class="buttons">
+           <button class="btn-primary">Get Started →</button>
+           <button class="btn-secondary">Learn More</button>
+        </div> 
+     </div>
+     <div>
+<img src="{{ url_for('static', filename='images/real heart.png') }}" class="realheart">
+    </div>
+  </div>  
+  <div class="stats-container">
+
+    <div class="stat-box">
+        <div class="accuracy"><img src="{{url_for('static', filename='images/accuracy.jpg')}}" class="accuracy"></div>
+        <div class="stat-content">
+        <h1>98%</h1>
+        <p>Accuracy</p>
+        </div>
+    </div>
+
+    <div class="stat-box">
+        <div class="personlogo"><img src="{{url_for('static',filename='images/person logo.png')}}" class="personlogo"></div>
+        <div class="stat-content">
+        <h1>303</h1>
+        <p>Patients Dataset</p>
+        </div>
+    </div>
+
+    <div class="stat-box">
+        <div class="pulse"><img src="{{url_for('static',filename='images/pulse.jpg')}}" class="pulse"></div>
+        <div class="stat-content">
+        <h1>13</h1>
+        <p>Health Parameters</p>
+        </div>
+    </div>
+
+    <div class="stat-box">
+        <div class="aiml"><img src="{{url_for('static',filename='images/aiml.png')}}" class="aiml"></div>
+        <div class="stat-content">
+        <h1>AI/ML</h1>
+        <p>Technology</p>
+        </div>
+    </div>
+
+</div>
+  
+</body>
+</html>
