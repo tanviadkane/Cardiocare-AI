@@ -29,6 +29,7 @@ def signup():
 def signup_success():
     return render_template("signup_success.html")
 
+
 @app.route('/testing')
 def testing():
     return render_template("testing.html")
